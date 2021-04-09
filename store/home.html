@@ -2,21 +2,162 @@
 <html lang="en">
 <head>
     <title>EMAJJ PIZZA</title>
+    <style>
+        body
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.navbar{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+nav ul{
+	display: inline-block;
+	list-style-type: none;
+}
+nav ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+a{
+	text-decoration: none;
+	color: Gray;
+}
+p{
+	color: Gray;
+}
+.container{
+	max-width: 1300px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.col-2{
+	flex-basis: 50%;
+	min-width: 300px;
+}
+.col-2 img{
+	max-width:100%;
+	padding:50px 0;
+}
+
+.col-2 h1{
+	font-size: 50px;
+	line-height: 60px;
+	margin: 25px 0;
+	color: Black;
+}
+.header{
+	background: radial-gradient(#fff,#ffd6d6)
+}
+.featured{
+	margin: 70px 0;
+}
+.col-3{
+	flex-basis:25%;
+	padding:10px;
+	min-width:200px;
+	margin-bottom:50px;
+}
+.col-3 img{
+	width: 100%
+}
+.small-container{
+	max-width: 1080px;
+	margin:auto;
+	padding-left:25px;
+	padding-right:25px;
+}
+.title{
+	text-align:center;
+	margin:0 auto 80px;
+	position:relative;
+	line-height:60px;
+	color:Black;
+    </style>
 </head>
 
 <body>
-    <nav class="navbar"> <!-- Top navigation bar: MENU    SHOPPING CART   etc.-->
+    <div class=header>
+        <div class=container>
+    <div class="navbar"><!-- Top navigation bar: MENU    SHOPPING CART   etc.-->
+        <div class="logo"><!-- Need to add a logo-->
+            
+        </div>
         <ul>
             <li><a href="menu.html">MENU</a></li>
             <li><a href="order.html">YOUR ORDER</a></li>
+            <input type="text" placeholder="Search..">
         </ul>
     </nav>
+        </div>
+    </div>
     <br>
     <!-- Add a nice picture here or something -->
-    <div>
-        <h1>Best Pizza in Houston. Delivered fast or order for pickup.</h1> 
-        <h2>Check out our featured pizzas below</h2> <!-- Add 3 or 4 pizzas horizontally below here, also link them -->
-    </div>
+    <div class="row">
+         <div class="col-2">
+              <h1>Best Pizza in Houston. Delivered fast or order for pickup.</h1> 
+        </div>
+        <div class="col-2">
+<img src="pic 2.jpg">
+</div>
+<div class="featured">
+<h2 class="title">Check out our featured products</h2>
+<div class="small-container">
+<div class="row">
+<div class="col-3">
+<img src="cheese pizza.jpg">
+<h4>Cheese</h4>
+<div class="rating">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star-o"></i>
+</div>
+<p>Small - $8.00<br>Medium - $12.00<br>Large - $15.00</p>
+</div>
+<div class="col-3">
+<img src="pepperoni.jpg">
+<h4>Pepperoni</h4>
+<div class="rating">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star-half"></i>
+<i class="fa fa-star-o"></i>
+</div>
+<p>Small - $8.00<br> Medium - $12.00<br> Large-$15.00</p>
+</div>
+<div class="col-3">
+<img src="supreme pizza.jpg">
+<h4>Supreme</h4>
+<div class="rating">
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star"></i>
+<i class="fa fa-star-half"></i>
+<i class="fa fa-star-o"></i>
+</div>
+<p>Small - $11.00 Medium - $16.00 Large - $20.00</p>
+</div>
+</div>
+</div>
+</div>
+</div>
     
 
 </body>
