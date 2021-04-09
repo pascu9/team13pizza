@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HAWAIIAN PIZZA</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="order.html">YOUR ORDER</a></li>
+        </ul>
+    </nav>
+    <br>
+
+    <!-- Larger image of the pizza goes here -->
+    <div class="product_img">
+        <img src="images/" alt="hawaiian"> <!-- placeholder image, resize and style it later -->
+    </div>
+
+    <div class="pizza_description">
+        <p>HAWAIIAN</p>
+        <p>Ham, pineapple, mozzarella cheese, and tomato sauce</p>
+    </div>
+
+    <div class="Add-Ons">
+        <!-- Add checkboxes of options here -->
+        <p>Select additional toppings</p>
+
+        <p>Meats</p>
+        <div> <!-- This div block is for checkboxes of additional toppings -->
+            <input type="checkbox" id="chicken" name="chicken">
+            <label for="chicken">Chicken</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="pepperoni" name="pepperoni">
+            <label for="pepperoni">Pepperoni</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="beef" name="beef">
+            <label for="beef">Beef</label>
+        </div>
+        <br>
+
+        <p>Others</p>
+        <div>
+            <input type="checkbox" id="mushrooms" name="mushrooms">
+            <label for="mushrooms">Mushrooms</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="greenpeppers" name="greenpeppers">
+            <label for="greenpeppers">Green Peppers</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="tomatoes" name="tomatoes">
+            <label for="tomatoes">Tomatoes</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="spinach" name="spinach">
+            <label for="spinach">Spinach</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="pineapple" name="pineapple">
+            <label for="pineapple">Pineapple</label>
+        </div>
+
+    </div>
+
+    <div class="size"> <!-- Format this so the checkboxes are horizontal -->
+        <div>
+            <input type="checkbox" id="small" name="small">
+            <label for="small">Small - $10.00 </label>
+        </div>
+        <div>
+            <input type="checkbox" id="medium" name="medium">
+            <label for="medium">Medium - $13.00 </label>
+        </div>
+        <div>
+            <input type="checkbox" id="large" name="large">
+            <label for="large">Medium - $16.00 </label>
+        </div>
+    </div>
+    
+    <button class="btn order">ADD TO ORDER</button> <!-- Incomplete, have this button actually do something -->
+
+</body>
+
+</html>
